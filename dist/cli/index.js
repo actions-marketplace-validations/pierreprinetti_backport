@@ -144,7 +144,7 @@ class PullRequestConfigsParser extends configs_parser_1.default {
         return {
             author: originalPullRequest.author,
             title: `[${targetBranch}] ${originalPullRequest.title}`,
-            body: `**Backport:** ${originalPullRequest.htmlUrl}\r\n\r\n${originalPullRequest.body}\r\n\r\nPowered by [BPer](https://github.com/lampajr/backporting).`,
+            body: `This is an automated backport of ${originalPullRequest.htmlUrl}\r\n\r\n${originalPullRequest.body}`,
             reviewers: [...new Set(reviewers)],
             targetRepo: originalPullRequest.targetRepo,
             sourceRepo: originalPullRequest.targetRepo,
