@@ -1,4 +1,4 @@
-name: "Backporting GitHub Action"
+name: "Configurable backport"
 description: "GitHub action providing an automated way to backport pull requests from one branch to another"
 inputs:
   dry-run:
